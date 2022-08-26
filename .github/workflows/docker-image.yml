@@ -61,3 +61,13 @@ jobs:
           tags: |
              ${{ secrets.DOCKER_USERNAME }}/aria2-pro:${{ steps.set-version.outputs.version }}
              ${{ secrets.DOCKER_USERNAME }}/aria2-pro:latest
+             
+      -
+        name: Docker Hub Description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: ddsderek/aria2-pro
+          short-description: Adapted from P3TERX/Aria2-Pro Image
+          readme-filepath: ./README.md
