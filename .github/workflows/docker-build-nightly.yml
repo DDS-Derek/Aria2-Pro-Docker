@@ -14,8 +14,8 @@
 name: Build Aria2-Pro-Docker Nightly
 
 on:
-    release:
-        types: [published]
+  schedule:
+    - cron: '0 2 * * *'
 
 jobs:
   push:
