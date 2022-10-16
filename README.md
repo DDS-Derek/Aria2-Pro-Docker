@@ -51,7 +51,7 @@ docker run -d \
     --log-opt max-size=1m \
     --restart unless-stopped \
     -p 6880:6880 \
-    p3terx/ariang
+    ddsderek/ariang
 ```
 
 > **TIPS:** It is important for the firewall to open ports.
