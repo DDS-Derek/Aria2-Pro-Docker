@@ -14,6 +14,7 @@
 name: Build Aria2-Pro-Docker Nightly
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'
 
