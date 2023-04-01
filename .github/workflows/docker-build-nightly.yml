@@ -46,7 +46,7 @@ jobs:
 
       - 
         name: Build Aria2-Pro-Docker
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: Dockerfile
