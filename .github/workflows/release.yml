@@ -6,17 +6,16 @@
 #
 # https://github.com/P3TERX/Aria2-Pro-Docker https://github.com/DDS-Derek/Aria2-Pro-Docker
 #
-# Copyright (c) 2020-2022 P3TERX <https://p3terx.com> DDSRem DDSDerek <https://blog.ddsrem.gq>
+# Copyright (c) 2020-2022 P3TERX <https://p3terx.com>
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 
-name: Build Aria2-Pro-Docker Nightly
+name: Build Aria2-Pro-Docker
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * *'
+    release:
+        types: [published]
 
 jobs:
   push:
@@ -60,4 +59,15 @@ jobs:
           build-args: |
             VERSION=${{ steps.set-version.outputs.version }}
           tags: |
-             ${{ secrets.DOCKER_USERNAME }}/aria2-pro:nightly
+             ${{ secrets.DOCKER_USERNAME }}/aria2-pro:${{ steps.set-version.outputs.version }}
+             ${{ secrets.DOCKER_USERNAME }}/aria2-pro:latest
+             
+      -
+        name: Docker Hub Description
+        uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: ddsderek/aria2-pro
+          short-description: Adapted from P3TERX/Aria2-Pro Image
+          readme-filepath: ./README.md
