@@ -15,7 +15,7 @@ services:
       - DISK_CACHE=64M
       - IPV6_MODE=false
       - UPDATE_TRACKERS=true
-      - CUSTOM_TRACKER_URL=
+      - CUSTOM_TRACKER_URL=https://raw.githubusercontent.com/DDS-Derek/Aria2-Pro-Docker/main/tracker/all.list
       - TZ=Asia/Shanghai
       - DOWNLOAD_DIR=/downloads
     volumes:
