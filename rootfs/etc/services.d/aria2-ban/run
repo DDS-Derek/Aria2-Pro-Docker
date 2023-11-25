@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+RPC_SECRET=${RPC_SECRET:-P3TERX}
+
+aria2b -u "http://127.0.0.1:${RPC_PORT}/jsonrpc" -s "${RPC_SECRET}"

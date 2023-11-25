@@ -13,8 +13,16 @@
 
 FROM p3terx/s6-alpine
 
-RUN apk add --no-cache jq findutils && \
+RUN apk add --no-cache \
+        jq \
+        findutils \
+        iptables \
+        ip6tables \
+        ipset \
+        nodejs \
+        npm && \
     curl -fsSL git.io/aria2c.sh | bash && \
+    npm i -g aria2b && \
     rm -rf /var/cache/apk/* /tmp/*
 
 COPY rootfs /
