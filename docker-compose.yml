@@ -29,6 +29,8 @@ services:
 #      - 6800:6800
 #      - 6888:6888
 #      - 6888:6888/udp
+    cap_add:
+      - NET_ADMIN
     restart: unless-stopped
 # Since Aria2 will continue to generate logs, limit the log size to 1M to prevent your hard disk from running out of space.
     logging:
