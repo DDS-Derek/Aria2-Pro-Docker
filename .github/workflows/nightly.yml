@@ -81,7 +81,7 @@ jobs:
 
       - 
         name: Push List
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: tracker
           commit_message: Update Trackers
