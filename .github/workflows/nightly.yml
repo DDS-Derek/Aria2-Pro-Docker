@@ -66,7 +66,6 @@ jobs:
         name: Smartdns GFWList
         run: |
           echo > /tmp/blank
-          mkdir tracker
 
           curl -sSL https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt > /tmp/all
           curl -sSL https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt > /tmp/AT_all
