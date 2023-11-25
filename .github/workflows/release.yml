@@ -11,7 +11,7 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 
-name: Build Aria2-Pro-Docker
+name: Build
 
 on:
     release:

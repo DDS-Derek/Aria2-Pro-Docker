@@ -11,7 +11,7 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 
-name: Build Aria2-Pro-Docker Nightly
+name: Nightly & Tacker Update
 
 on:
   workflow_dispatch:
@@ -61,3 +61,31 @@ jobs:
             VERSION=${{ steps.set-version.outputs.version }}
           tags: |
              ${{ secrets.DOCKER_USERNAME }}/aria2-pro:nightly
+
+      - 
+        name: Smartdns GFWList
+        run: |
+          echo > /tmp/blank
+
+          curl -sSL https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt > /tmp/all
+          curl -sSL https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_all.txt > /tmp/AT_all
+          curl -sSL https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt > /tmp/trackerslist_all
+          cat /tmp/all /tmp/blank /tmp/AT_all /tmp/blank /tmp/trackerslist_all | uniq | sed ":a;N;s/\n/,/g;ta" | sed -e "s/,,/,/g" -e "s/,$//g" | tr -d "\n" > all.list
+          cat /tmp/all /tmp/blank /tmp/AT_all /tmp/blank /tmp/trackerslist_all | uniq | sed ":a;N;s/\n/,/g;ta" | sed -e "s/,,/,/g" -e "s/,$//g" | sed -e "s/,/\n/g" > all_raw.list
+
+          curl -sSL https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/best.txt > /tmp/best
+          curl -sSL https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/AT_best.txt > /tmp/AT_best
+          curl -sSL https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt > /tmp/trackerslist_best
+          cat /tmp/best /tmp/blank /tmp/AT_best /tmp/blank /tmp/trackerslist_best | uniq | sed ":a;N;s/\n/,/g;ta" | sed -e "s/,,/,/g" -e "s/,$//g" | tr -d "\n" > best.list
+          cat /tmp/best /tmp/blank /tmp/AT_best /tmp/blank /tmp/trackerslist_best | uniq | sed ":a;N;s/\n/,/g;ta" | sed -e "s/,,/,/g" -e "s/,$//g" | sed -e "s/,/\n/g" > best_raw.list
+
+      - 
+        name: Push List
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: tracker
+          commit_message: Update Trackers
+          skip_dirty_check: false
+          commit_user_name: Action Bot
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_author: Action <actions@github.com>
