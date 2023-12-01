@@ -12,10 +12,8 @@ http://tracker.gbitt.info:80/announce
 http://tracker.ipv6tracker.ru:80/announce
 http://tracker.k.vu:6969/announce
 http://tracker.renfei.net:8080/announce
-http://tracker.rev.pm:6969/announce
 http://tracker.tfile.co:80/announce
 http://v6-tracker.0g.cx:6969/announce
-http://wg.mortis.me:6969/announce
 http://www.all4nothin.net:80/announce.php
 http://www.wareztorrent.com:80/announce
 https://1337.abcvg.info:443/announce
@@ -58,6 +56,7 @@ udp://run-2.publictracker.xyz:6969/announce
 udp://sabross.xyz:6969/announce
 udp://static.54.161.216.95.clients.your-server.de:6969/announce
 udp://su-data.com:6969/announce
+udp://tamas3.ynh.fr:6969/announce
 udp://thetracker.org:80/announce
 udp://thouvenin.cloud:6969/announce
 udp://tk1.trackerservers.com:8080/announce
@@ -91,6 +90,7 @@ udp://ttk2.nbaonlineservice.com:6969/announce
 udp://u4.trakx.crim.ist:1337/announce
 udp://u6.trakx.crim.ist:1337/announce
 udp://uploads.gamecoast.net:6969/announce
+udp://wepzone.net:6969/announce
 udp://y.paranoid.agency:6969/announce
 wss://tracker.openwebtorrent.com:443/announce
 http://tracker.gbitt.info/announce
@@ -130,12 +130,12 @@ udp://open.stealth.si:80/announce
 udp://tracker.torrent.eu.org:451/announce
 udp://exodus.desync.com:6969/announce
 udp://explodie.org:6969/announce
+udp://uploads.gamecoast.net:6969/announce
 udp://tracker1.bt.moack.co.kr:80/announce
 udp://tracker.tiny-vps.com:6969/announce
-udp://tracker-udp.gbitt.info:80/announce
-udp://p4p.arenabg.com:1337/announce
-udp://movies.zsw.ca:6969/announce
-https://tracker.gbitt.info:443/announce
-http://tracker.gbitt.info:80/announce
-udp://uploads.gamecoast.net:6969/announce
 udp://tracker.theoks.net:6969/announce
+udp://tracker.4.babico.name.tr:3131/announce
+udp://tracker-udp.gbitt.info:80/announce
+udp://thouvenin.cloud:6969/announce
+udp://tamas3.ynh.fr:6969/announce
+udp://retracker01-msk-virt.corbina.net:80/announce
