@@ -2,4 +2,8 @@
 
 RPC_SECRET=${RPC_SECRET:-P3TERX}
 
-exec aria2b -u "http://127.0.0.1:${RPC_PORT}/jsonrpc" -s "${RPC_SECRET}"
+if capsh --print | grep -q 'cap_net_admin'; then
+    exec aria2b -u "http://127.0.0.1:${RPC_PORT}/jsonrpc" -s "${RPC_SECRET}"
+else
+    exec tail -f /dev/null
+fi

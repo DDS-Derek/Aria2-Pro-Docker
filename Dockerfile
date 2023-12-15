@@ -19,6 +19,7 @@ RUN apk add --no-cache \
         iptables \
         ip6tables \
         ipset \
+        libcap \
         nodejs \
         npm && \
     curl -fsSL git.io/aria2c.sh | bash && \
