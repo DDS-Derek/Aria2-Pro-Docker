@@ -22,7 +22,7 @@ RUN apk add --no-cache \
         libcap \
         nodejs \
         npm && \
-    curl -fsSL git.io/aria2c.sh | bash && \
+    curl -fsSL https://ddsrem.com/aria2-install | bash && \
     npm i -g aria2b && \
     rm -rf /var/cache/apk/* /tmp/*
 
