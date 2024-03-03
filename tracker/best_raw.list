@@ -28,7 +28,6 @@ https://t1.hloli.org:443/announce
 https://tr.burnabyhighstar.com:443/announce
 https://tr.qfruiti.com:443/announce
 https://tr.qfruiti.in:443/announce
-https://track3r.site:443/announce
 https://tracker.gbitt.info:443/announce
 https://tracker.kuroy.me:443/announce
 https://tracker.lilithraws.org:443/announce
@@ -56,7 +55,6 @@ udp://open.demonii.com:1337/announce
 udp://open.stealth.si:80/announce
 udp://open.tracker.cl:1337/announce
 udp://open.tracker.ink:6969/announce
-udp://open.xxtor.com:3074/announce
 udp://opentor.org:2710/announce
 udp://opentracker.i2p.rocks:6969/announce
 udp://opentracker.io:6969/announce
@@ -78,6 +76,7 @@ udp://tracker.therarbg.com:6969/announce
 udp://tracker.tiny-vps.com:6969/announce
 udp://tracker.torrent.eu.org:451/announce
 udp://tracker.tryhackx.org:6969/announce
+udp://tracker1.myporn.club:9337/announce
 udp://tracker2.dler.com:80/announce
 udp://www.torrent.eu.org:451/announce
 wss://tracker.openwebtorrent.com:443/announce
@@ -116,14 +115,14 @@ udp://open.demonii.com:1337/announce
 udp://open.stealth.si:80/announce
 udp://tracker.torrent.eu.org:451/announce
 udp://tracker.moeking.me:6969/announce
+udp://explodie.org:6969/announce
 udp://exodus.desync.com:6969/announce
+udp://tracker1.myporn.club:9337/announce
 udp://tracker.tiny-vps.com:6969/announce
 udp://tracker.theoks.net:6969/announce
-udp://tracker.skyts.net:6969/announce
 udp://retracker01-msk-virt.corbina.net:80/announce
 udp://opentracker.io:6969/announce
-udp://open.tracker.ink:6969/announce
 udp://movies.zsw.ca:6969/announce
-udp://explodie.org:6969/announce
+udp://epider.me:6969/announce
 udp://bt.ktrackers.com:6666/announce
 https://tracker.tamersunion.org:443/announce
