@@ -12,7 +12,7 @@
 ```
 3. Anime trackers
 ```shell
-https://raw.githubusercontent.com/DDS-Derek/Aria2-Pro-Docker/main/tracker/all.list
+https://raw.githubusercontent.com/DDSRem-Dev/Aria2-Pro-Docker/main/tracker/all.list
 https://ddsrem.com/alltracker
-https://raw.dov.moe/DDS-Derek/Aria2-Pro-Docker/main/tracker/all.list
+https://raw.dov.moe/DDSRem-Dev/Aria2-Pro-Docker/main/tracker/all.list
 ```

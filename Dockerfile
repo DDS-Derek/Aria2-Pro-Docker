@@ -31,7 +31,7 @@ COPY rootfs /
 ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=1 \
     RCLONE_CONFIG=/config/rclone.conf \
     UPDATE_TRACKERS=true \
-    CUSTOM_TRACKER_URL=https://raw.githubusercontent.com/DDS-Derek/Aria2-Pro-Docker/main/tracker/all.list \
+    CUSTOM_TRACKER_URL=https://raw.githubusercontent.com/DDSRem-Dev/Aria2-Pro-Docker/main/tracker/all.list \
     LISTEN_PORT=6888 \
     RPC_PORT=6800 \
     RPC_SECRET= \
